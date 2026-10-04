@@ -26,3 +26,5 @@ export function usePageNav(navId?: string, oldProp?: NavModel): NavModel | undef
 function getNavIndex(store: StoreState) {
   return store.navIndex;
 }
+
+// alden e2e: unicode ✓
