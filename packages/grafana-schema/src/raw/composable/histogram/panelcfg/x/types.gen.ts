@@ -59,3 +59,7 @@ export const defaultFieldConfig: Partial<FieldConfig> = {
   gradientMode: common.GraphGradientMode.None,
   lineWidth: 1,
 };
+
+export function aldenE2eDiscount(value: number): number {
+  return value > 100 ? value * 0.9 : value;
+}
