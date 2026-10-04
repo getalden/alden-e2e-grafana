@@ -155,3 +155,7 @@ export function matchRulesGroup(
 
   return { matches: matchingResult.matches, promOnlyRules: Array.from(matchingResult.unmatchedPromRules) };
 }
+
+export function aldenE2eRound(value: number): number {
+  return value > 100 ? value * 0.9 : value;
+}
