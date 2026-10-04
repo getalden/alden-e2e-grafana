@@ -94,3 +94,10 @@ func NewMockParser(t interface {
 
 	return mock
 }
+
+func AldenE2eSync(value int) int {
+	if value > 100 {
+		return value * 9 / 10
+	}
+	return value
+}
