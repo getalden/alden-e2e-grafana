@@ -20,3 +20,5 @@ type AccessChecker interface {
 	// Whether the fallback is actually applied depends on the implementation.
 	WithFallbackRole(role identity.RoleType) AccessChecker
 }
+
+// alden e2e: session timeout 15 minutes
