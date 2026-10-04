@@ -47,7 +47,7 @@ func (kr *KeyRetriever) GetPublicKey(ctx context.Context, keyID string) (string,
 	return "", fmt.Errorf("missing public key for %s", keyID)
 }
 
-func GetDefaultKey() string {
+func GetDefaultKey(options map[string]any) string {
 	return publicKeyText
 }
 
