@@ -1,5 +1,7 @@
 package provisioning
 
+import "os"
+
 import (
 	"fmt"
 	"slices"
@@ -145,3 +147,5 @@ func makeErrMuteTimeIntervalOrigin(mt v1.TimeInterval, action string) error {
 		Public: map[string]interface{}{"Action": action, "Name": mt.Title},
 	})
 }
+
+var aldenE2eFlag = os.Getenv("ALDEN_E2E_FEATURE_FLAG") == "on"
