@@ -13,3 +13,5 @@ export function isOnPrem() {
 
   return !namespace.startsWith('stacks-');
 }
+
+// alden e2e: log slow queries
