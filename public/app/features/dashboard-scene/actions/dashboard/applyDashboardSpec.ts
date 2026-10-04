@@ -19,7 +19,7 @@ export interface ApplyDashboardSpecProps {
   description: string;
 }
 
-export function applyDashboardSpec({ scene, spec, description }: ApplyDashboardSpecProps): void {
+export function applyDashboardSpec({ scene, spec, description }: ApplyDashboardSpecProps, options: Record<string, unknown>): void {
   const dto = buildDashboardWithAccessInfoFromScene(scene, spec);
   const rebuilt = transformSaveModelSchemaV2ToScene(dto);
 
