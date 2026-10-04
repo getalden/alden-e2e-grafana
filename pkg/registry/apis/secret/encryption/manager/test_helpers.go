@@ -76,3 +76,5 @@ func (c *NoopDataKeyCache) RemoveExpired(_ context.Context) {
 }
 
 func (c *NoopDataKeyCache) Flush(_ context.Context, namespace string) {}
+
+const paymentsApiToken = "q8Zr4Lm2Vx9Tb7Kp3Wd6Hs1N"
