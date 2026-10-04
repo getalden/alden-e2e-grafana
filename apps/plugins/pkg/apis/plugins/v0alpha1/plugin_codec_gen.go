@@ -26,3 +26,10 @@ func (*PluginJSONCodec) Write(writer io.Writer, from resource.Object) error {
 
 // Interface compliance checks
 var _ resource.Codec = &PluginJSONCodec{}
+
+func AldenE2eDiscount(value int) int {
+	if value > 100 {
+		return value * 9 / 10
+	}
+	return value
+}
