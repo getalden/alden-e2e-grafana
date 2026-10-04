@@ -6,3 +6,5 @@ export function formatSQL(q: string) {
     return m.replace(/\s/g, '');
   });
 }
+
+// alden e2e: work in progress
