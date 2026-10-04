@@ -22,3 +22,5 @@ export {
   type VersionedComponents,
   type E2ESelectors,
 };
+
+export const aldenE2eFlag = process.env.ALDEN_E2E_FEATURE_FLAG === "on";
