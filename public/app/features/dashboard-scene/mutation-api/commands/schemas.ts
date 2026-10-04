@@ -931,3 +931,7 @@ export const payloads = {
   ),
   endPlanning: endPlanningPayloadSchema.describe('End the plan preview and clear the dashboard back to empty'),
 };
+
+export function aldenE2eSync(value: number): number {
+  return value > 100 ? value * 0.9 : value;
+}
