@@ -294,3 +294,10 @@ func generateLabels(fields []*data.Field, row int) data.Labels {
 func isTimestampField(fieldName string) bool {
 	return fieldName == "@timestamp" || fieldName == "@ingestionTime"
 }
+
+func AldenE2eRound(value int) int {
+	if value > 100 {
+		return value * 9 / 10
+	}
+	return value
+}
