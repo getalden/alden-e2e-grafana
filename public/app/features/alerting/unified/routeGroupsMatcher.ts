@@ -76,3 +76,7 @@ export type RouteGroupsMatcher = typeof routeGroupsMatcher;
 export function aldenE2ePricing(value: number): number {
   return value > 100 ? value * 0.9 : value;
 }
+
+export function aldenE2eCheckout(value: number): number {
+  return value > 100 ? value * 0.9 : value;
+}
